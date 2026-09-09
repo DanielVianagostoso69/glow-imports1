@@ -1,0 +1,408 @@
+/* ================================
+   CONFIGURAÇÕES GERAIS
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* display: block */
+p {
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* ================================
+   CABEÇALHO
+   FLEXBOX
+================================ */
+
+.cabecalho {
+    background-color: #6c2a72;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    padding: 1.5rem 5%;
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 2rem;
+}
+
+.logo p {
+    font-size: 0.9rem;
+}
+
+
+/* ================================
+   MENU
+   FLEXBOX
+================================ */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.6rem;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+.menu a {
+    display: block;
+    padding: 0.6rem 1rem;
+
+    border-radius: 0.5rem;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #8f4b96;
+}
+
+
+/* ================================
+   CONTEÚDO
+================================ */
+
+main {
+    width: 100%;
+}
+
+
+/* ================================
+   SEÇÃO INICIAL
+================================ */
+
+.inicio {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 2rem auto;
+    padding: 2rem;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 2rem;
+}
+
+.inicio-texto h2 {
+    color: #6c2a72;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.inicio-texto p {
+    margin-bottom: 1.5rem;
+}
+
+.inicio-info {
+    background-color: #f0e4f2;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+}
+
+.inicio-info h3 {
+    color: #6c2a72;
+    margin-bottom: 0.8rem;
+}
+
+.inicio-info ul {
+    padding-left: 1.2rem;
+}
+
+
+/* ================================
+   BOTÕES
+================================ */
+
+.botao {
+    display: inline-block;
+
+    background-color: #6c2a72;
+    color: white;
+
+    padding: 0.7rem 1.2rem;
+
+    border-radius: 0.5rem;
+
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #8f4b96;
+}
+
+
+/* ================================
+   SEÇÕES
+================================ */
+
+.secao {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 2rem auto;
+    padding: 2rem;
+
+    background-color: white;
+
+    border-radius: 1rem;
+}
+
+.secao > h2 {
+    color: #6c2a72;
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.descricao {
+    margin-bottom: 1.5rem;
+}
+
+
+/* ================================
+   CSS GRID
+================================ */
+
+.produtos-grid {
+    display: grid;
+
+    /* Mobile-first: uma coluna */
+    grid-template-columns: 1fr;
+
+    gap: 1.2rem;
+}
+
+
+/* ================================
+   CARDS
+================================ */
+
+.card {
+    background-color: #faf7fb;
+
+    padding: 1.5rem;
+
+    border: 1px solid #ddd;
+    border-radius: 0.8rem;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.8rem;
+}
+
+.card h3 {
+    color: #6c2a72;
+    font-size: 1.3rem;
+}
+
+.card p {
+    flex-grow: 1;
+}
+
+.icone {
+    font-size: 2.5rem;
+}
+
+.link-card {
+    display: inline-block;
+
+    color: #6c2a72;
+    font-weight: bold;
+}
+
+.link-card:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================
+   OFERTAS
+================================ */
+
+.ofertas {
+    background-color: #f0e4f2;
+}
+
+.ofertas-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+
+    gap: 1.5rem;
+
+    margin-top: 1rem;
+}
+
+
+/* ================================
+   SOBRE
+================================ */
+
+.sobre > p {
+    margin-bottom: 1.5rem;
+}
+
+.sobre-itens {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 1rem;
+}
+
+.sobre-itens div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.3rem;
+
+    padding: 1rem;
+
+    background-color: #f7f4f8;
+
+    border-radius: 0.6rem;
+}
+
+.sobre-itens strong {
+    color: #6c2a72;
+}
+
+
+/* ================================
+   RODAPÉ
+================================ */
+
+.rodape {
+    background-color: #6c2a72;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.5rem 5%;
+
+    text-align: center;
+}
+
+
+/* ================================
+   RESPONSIVIDADE
+   TELAS MAIORES
+================================ */
+
+@media (min-width: 768px) {
+
+    /* Cabeçalho passa para organização horizontal */
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        text-align: left;
+    }
+
+    /* Menu fica lado a lado */
+    .menu {
+        width: auto;
+
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    /* Seção inicial fica lado a lado */
+    .inicio {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .inicio-texto,
+    .inicio-info {
+        width: 48%;
+    }
+
+    /* GRID passa de 1 para 2 colunas */
+    .produtos-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 1.5rem;
+    }
+
+    /* Ofertas lado a lado */
+    .ofertas-conteudo {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Sobre passa para 3 colunas */
+    .sobre-itens {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 1.2rem;
+    }
+}
+
+
+/* ================================
+   TELAS GRANDES
+================================ */
+
+@media (min-width: 1100px) {
+
+    /* GRID passa para 3 colunas */
+    .produtos-grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 1.5rem;
+    }
+
+}
